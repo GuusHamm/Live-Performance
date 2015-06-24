@@ -1,0 +1,9 @@
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\bin\Debug\GuusHamm, S22.exe.config
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\bin\Debug\GuusHamm, S22.exe
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\bin\Debug\GuusHamm, S22.pdb
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\obj\Debug\GuusHamm, S22.csprojResolveAssemblyReference.cache
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\obj\Debug\GuusHamm__S22.Properties.Resources.resources
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\obj\Debug\GuusHamm, S22.csproj.GenerateResource.Cache
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\obj\Debug\GuusHamm, S22.exe
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\obj\Debug\GuusHamm, S22.pdb
+C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\bin\Debug\Oracle.DataAccess.dll
