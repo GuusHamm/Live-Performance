@@ -6,6 +6,8 @@
     using System.Collections.Generic;
     using System.Windows.Forms;
 
+    using GuusHamm__S22.Managers;
+
     using Oracle.DataAccess.Client;
 
     #endregion
@@ -17,6 +19,22 @@
         public Form1()
         {
             this.InitializeComponent();
+        }
+
+        private void BtnLogIn_Click(object sender, EventArgs e)
+        {
+            if (this.tbPassword.Text != null || this.tbUsername.Text != null)
+            {
+                if (CrewManager.LogInCrewMember(tbUsername.Text, tbPassword.Text))
+                {
+                    MessageBox.Show("Succesvol ingelogd");
+                }
+                else
+                {
+                    MessageBox.Show("Foute combinatie");
+                }
+                
+            }
         }
     }
 }

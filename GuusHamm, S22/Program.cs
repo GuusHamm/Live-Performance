@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace GuusHamm__S22
+﻿namespace GuusHamm__S22
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
+
+    /// <summary>The program.</summary>
     static class Program
     {
         /// <summary>
@@ -18,6 +19,7 @@ namespace GuusHamm__S22
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             DatabaseManager.Initialize();
+            Settings.Initialize();
         }
     }
 }

@@ -7,3 +7,6 @@ C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\bin\x86\Debug\GuusHam
 C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.exe
 C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.pdb
 C:\Users\Guus\Source\Repos\SE2\GuusHamm, S22\GuusHamm, S22\obj\x86\Debug\GuusHamm, S22.csprojResolveAssemblyReference.cache
+C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\bin\x86\Debug\GuusHamm__S22.exe.config
+C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.exe
+C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.pdb
