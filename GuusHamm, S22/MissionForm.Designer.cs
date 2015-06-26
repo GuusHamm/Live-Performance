@@ -63,6 +63,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dtpReading = new System.Windows.Forms.DateTimePicker();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudX)).BeginInit();
@@ -324,6 +325,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(216, 342);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedValueChanged += new System.EventHandler(this.listBox1_SelectedValueChanged);
             // 
             // button1
             // 
@@ -379,6 +381,7 @@
             // 
             // gbReading
             // 
+            this.gbReading.Controls.Add(this.button2);
             this.gbReading.Controls.Add(this.label12);
             this.gbReading.Controls.Add(this.label11);
             this.gbReading.Controls.Add(this.dtpReading);
@@ -391,7 +394,7 @@
             this.gbReading.Enabled = false;
             this.gbReading.Location = new System.Drawing.Point(224, 24);
             this.gbReading.Name = "gbReading";
-            this.gbReading.Size = new System.Drawing.Size(200, 196);
+            this.gbReading.Size = new System.Drawing.Size(200, 229);
             this.gbReading.TabIndex = 9;
             this.gbReading.TabStop = false;
             this.gbReading.Text = "groupBox4";
@@ -432,6 +435,16 @@
             this.dtpReading.Name = "dtpReading";
             this.dtpReading.Size = new System.Drawing.Size(200, 20);
             this.dtpReading.TabIndex = 15;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(9, 196);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(191, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Delete Reading";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MissionForm
             // 
@@ -506,5 +519,6 @@
         private System.Windows.Forms.NumericUpDown nudReadingY;
         private System.Windows.Forms.NumericUpDown nudReadingX;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button2;
     }
 }

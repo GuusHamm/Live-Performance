@@ -11,10 +11,10 @@ C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\bin\x86\Debug\GuusHamm
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.exe
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.pdb
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm, S22.csprojResolveAssemblyReference.cache
-C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.Form1.resources
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.Properties.Resources.resources
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm, S22.csproj.GenerateResource.Cache
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\bin\x86\Debug\GuusHamm__S22.exe
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\bin\x86\Debug\GuusHamm__S22.pdb
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\bin\x86\Debug\Oracle.DataAccess.dll
 C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.MissionForm.resources
+C:\Users\Guus\Source\Repos\Live-Performance\GuusHamm, S22\obj\x86\Debug\GuusHamm__S22.MainMenuForm.resources

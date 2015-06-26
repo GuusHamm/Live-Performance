@@ -1,10 +1,11 @@
 ﻿namespace GuusHamm__S22
 {
+    #region
+
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
     using System.Windows.Forms;
+
+    #endregion
 
     /// <summary>The program.</summary>
     static class Program
@@ -17,7 +18,7 @@
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DatabaseManager databaseManager = new DatabaseManager();
+            DatabaseSettings databaseSettings = new DatabaseSettings();
             Settings.Initialize();
             Application.Run(new MainMenuForm());
         }

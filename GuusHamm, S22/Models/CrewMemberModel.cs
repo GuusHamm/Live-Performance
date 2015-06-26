@@ -1,23 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GuusHamm__S22.Models
+﻿namespace GuusHamm__S22.Models
 {
+    #region
+
+    using System;
+
+    #endregion
+
+    /// <summary></summary>
     public class CrewMemberModel
     {
-        public int Id { get; private set; }
+        /// <summary></summary>
+        public enum JobEnum
+        {
+            /// <summary></summary>
+            Ceo, 
 
-        public string Name { get; private set; }
+            /// <summary></summary>
+            Administrator, 
 
-        public DateTime BirthDay { get; private set; }
+            /// <summary></summary>
+            Bioloog, 
 
-        public JobEnum Job { get; private set; }
+            /// <summary></summary>
+            Politie, 
 
-        public string UserName { get; private set; }
+            /// <summary></summary>
+            Kapitein, 
 
+            /// <summary></summary>
+            Technicus
+        }
+
+        /// <summary>Initializes a new instance of the <see cref="CrewMemberModel"/> class.</summary>
+        /// <param name="id">The id.</param>
+        /// <param name="name">The name.</param>
+        /// <param name="job">The job.</param>
+        /// <param name="birthDay">The birth day.</param>
+        /// <param name="userName">The user name.</param>
         public CrewMemberModel(int id, string name, JobEnum job, DateTime birthDay, string userName)
         {
             this.Id = id;
@@ -26,14 +45,20 @@ namespace GuusHamm__S22.Models
             this.BirthDay = birthDay;
             this.UserName = userName;
         }
-        public enum JobEnum
-        {
-            Ceo,
-            Administrator,
-            Bioloog,
-            Politie,
-            Kapitein,
-            Technicus
-        }
+
+        /// <summary>Gets the id.</summary>
+        public int Id { get; private set; }
+
+        /// <summary>Gets the name.</summary>
+        public string Name { get; private set; }
+
+        /// <summary>Gets the birth day.</summary>
+        public DateTime BirthDay { get; private set; }
+
+        /// <summary>Gets the job.</summary>
+        public JobEnum Job { get; private set; }
+
+        /// <summary>Gets the user name.</summary>
+        public string UserName { get; private set; }
     }
 }

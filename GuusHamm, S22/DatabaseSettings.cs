@@ -1,22 +1,19 @@
 ﻿namespace GuusHamm__S22
 {
+    #region
+
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Security.Cryptography.X509Certificates;
-    using System.Text;
-    using System.Threading.Tasks;
     using System.Windows.Forms;
 
     using Oracle.DataAccess.Client;
 
-    /// <summary>The database manager.</summary>
-    public class DatabaseManager
-    {
-        /// <summary>Gets the connection.</summary>
-        public static OracleConnection Connection { get; private set; }
+    #endregion
 
-        public DatabaseManager()
+    /// <summary>The database manager.</summary>
+    public class DatabaseSettings
+    {
+        /// <summary>Initializes a new instance of the <see cref="DatabaseSettings"/> class.</summary>
+        public DatabaseSettings()
         {
             /*
             Connection = new OracleConnection();
@@ -38,6 +35,9 @@
             Connection.Open();
         }
 
+        /// <summary>Gets the connection.</summary>
+        public static OracleConnection Connection { get; private set; }
+
         /// <summary>The initialize.</summary>
         public static void Initialize()
         {
@@ -49,18 +49,20 @@
              */
             }
 
+        /// <summary></summary>
         public static void Commit()
         {
             string query = "commit";
 
-            OracleCommand command = new OracleCommand(query, DatabaseManager.Connection);
+            OracleCommand command = new OracleCommand(query, DatabaseSettings.Connection);
             command.ExecuteNonQuery();
         }
-        
-        //<summary>The query template.</summary>
+
+        // <summary>The query template.</summary>
+        /// <summary></summary>
         public static void DatabaseQueryTemplate()
         {
-            using (OracleConnection connection = DatabaseManager.Connection)
+            using (OracleConnection connection = DatabaseSettings.Connection)
             {
                 string query = "select cm.* from crewmember cm where cm.id not in (select crewmemberid from crewmember_ship)";
                 OracleCommand command = new OracleCommand(query, connection);

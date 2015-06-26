@@ -1,50 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GuusHamm__S22.Models
+﻿namespace GuusHamm__S22.Models
 {
+    #region
+
+    using System;
+
+    #endregion
+
+    /// <summary></summary>
     public class MissionModel
     {
         /// <summary>The mission type.</summary>
         public enum MissionType
         {
-            Sin,
+            /// <summary></summary>
+            Sin, 
+
+            /// <summary></summary>
             Hope
         }
-        
-
-        /// <summary>Gets the id.</summary>
-        public int Id { get; private set; }
-
-        /// <summary>Gets the ship id.</summary>
-        public int ShipId { get; private set; }
-
-        /// <summary>Gets the start date.</summary>
-        public DateTime StartDate { get; private set; }
-
-        /// <summary>Gets the description.</summary>
-        public string Description { get; private set; }
-
-        /// <summary>Gets the x.</summary>
-        public int X { get; private set; }
-
-        /// <summary>Gets the y.</summary>
-        public int Y { get; private set; }
-
-        /// <summary>Gets the rapport.</summary>
-        public string Rapport { get; private set; }
-
-        /// <summary>Gets the mission type enum.</summary>
-        public MissionType MissionTypeEnum { get; private set; }
-
-        public int PoliceNeeded { get; private set; }
-
-        public bool Approved { get; private set; }
-
-        public DateTime EndDate { get; private set; }
 
         /// <summary>Initializes a new instance of the SIN Mission.</summary>
         /// <param name="id">The id.</param>
@@ -102,5 +75,38 @@ namespace GuusHamm__S22.Models
                 this.EndDate = endDate;
             }
         }
+
+        /// <summary>Gets the id.</summary>
+        public int Id { get; private set; }
+
+        /// <summary>Gets the ship id.</summary>
+        public int ShipId { get; private set; }
+
+        /// <summary>Gets the start date.</summary>
+        public DateTime StartDate { get; private set; }
+
+        /// <summary>Gets the description.</summary>
+        public string Description { get; private set; }
+
+        /// <summary>Gets the x.</summary>
+        public int X { get; private set; }
+
+        /// <summary>Gets the y.</summary>
+        public int Y { get; private set; }
+
+        /// <summary>Gets the rapport.</summary>
+        public string Rapport { get; private set; }
+
+        /// <summary>Gets the mission type enum.</summary>
+        public MissionType MissionTypeEnum { get; private set; }
+
+        /// <summary>Gets the police needed.</summary>
+        public int PoliceNeeded { get; private set; }
+
+        /// <summary>Gets a value indicating whether approved.</summary>
+        public bool Approved { get; private set; }
+
+        /// <summary>Gets the end date.</summary>
+        public DateTime EndDate { get; private set; }
     }
 }

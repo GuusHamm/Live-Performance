@@ -12,17 +12,17 @@
     #endregion
 
     /// <summary></summary>
-    static class ShipManager
+    class ShipManager
     {
         /// <summary>The get ship by id.</summary>
         /// <param name="id">The id.</param>
         /// <returns>The <see cref="ShipModel"/>.</returns>
-        public static ShipModel GetShipById(int id)
+        public ShipModel GetShipById(int id)
         {
             ShipModel shipModel = null;
 
             string query = string.Format("select s.*, st.* from Ship s join shiptype st on (s.shiptypetype = st.type) where id = {0}", id);
-                OracleCommand command = new OracleCommand(query, DatabaseManager.Connection);
+                OracleCommand command = new OracleCommand(query, DatabaseSettings.Connection);
                
                     OracleDataReader reader = command.ExecuteReader();
 
@@ -39,13 +39,15 @@
             return shipModel;
         }
 
-        public static List<ShipModel> GetAllShips()
+        /// <summary></summary>
+        /// <returns>The <see cref="List"/>.</returns>
+        public List<ShipModel> GetAllShips()
         {
-            List<ShipModel>ships = new List<ShipModel>();
+            List<ShipModel> ships = new List<ShipModel>();
             ShipModel shipModel = null;
 
             string query = "select s.*, st.* from Ship s join shiptype st on (s.shiptypetype = st.type) ";
-            OracleCommand command = new OracleCommand(query, DatabaseManager.Connection);
+            OracleCommand command = new OracleCommand(query, DatabaseSettings.Connection);
 
             OracleDataReader reader = command.ExecuteReader();
 
@@ -63,13 +65,15 @@
             return ships;
         }
 
-        public static List<ShipModel> GetAllAvailableShips()
+        /// <summary></summary>
+        /// <returns>The <see cref="List"/>.</returns>
+        public List<ShipModel> GetAllAvailableShips()
         {
             List<ShipModel> ships = new List<ShipModel>();
             ShipModel shipModel = null;
 
             string query = "select s.*, st.* from Ship s join shiptype st on (s.shiptypetype = st.type) where s.id not in (select shipid from mission where active = 1) ";
-            OracleCommand command = new OracleCommand(query, DatabaseManager.Connection);
+            OracleCommand command = new OracleCommand(query, DatabaseSettings.Connection);
 
             OracleDataReader reader = command.ExecuteReader();
 
@@ -86,12 +90,13 @@
 
             return ships;
         }
+
         /// <summary></summary>
         /// <param name="x">The x.</param>
         /// <param name="y">The y.</param>
         /// <param name="policeNeeded">The police needed.</param>
         /// <returns>The <see cref="ShipModel"/>.</returns>
-        public static ShipModel GetClosestShip(int x, int y, int policeNeeded)
+        public ShipModel GetClosestShip(int x, int y, int policeNeeded)
         {
             double distance = 1000;
             int id = 0;
@@ -99,7 +104,7 @@
             ShipModel shipModel = null;
                 string query = string.Format(
                     "SELECT s.id,  s.x,  s.y FROM Ship s where s.id NOT IN (SELECT shipid FROM mission WHERE active = 1) and(select count(*) from crewmember cm join crewmember_ship cms on (cm.id = cms.crewmemberid) where cms.shipid = s.id and upper(job)= 'POLITIE') >= {0}", policeNeeded);
-                OracleCommand command = new OracleCommand(query, DatabaseManager.Connection);
+                OracleCommand command = new OracleCommand(query, DatabaseSettings.Connection);
                
                     OracleDataReader reader = command.ExecuteReader();
 
@@ -117,9 +122,10 @@
                         }
                         
                     }
+
                 if (id != 0)
                 {
-                    shipModel = ShipManager.GetShipById(id);
+                    shipModel = this.GetShipById(id);
                 }
 
                 return shipModel;
@@ -130,7 +136,7 @@
         /// <param name="AvailableCrew">The available crew.</param>
         /// <param name="ship">The ship.</param>
         /// <returns>The <see cref="bool"/>.</returns>
-        public static bool ManShip(List<CrewMemberModel> AvailableCrew, ShipModel ship )
+        public bool ManShip(List<CrewMemberModel> AvailableCrew, ShipModel ship )
         {
             List<CrewMemberModel> shipsCrew = new List<CrewMemberModel>();
 
@@ -165,9 +171,10 @@
                         "insert into crewmember_ship(shipID,crewmemberID) values({0},{1})", 
                         ship.ID, 
                         crewMemberModel.Id);
-                    OracleCommand command = new OracleCommand(query, DatabaseManager.Connection);
+                    OracleCommand command = new OracleCommand(query, DatabaseSettings.Connection);
                     command.ExecuteNonQuery();
                 }
+
             return true;
         }
     }
