@@ -6,20 +6,14 @@ using System.Threading.Tasks;
 
 namespace GuusHamm__S22.Models
 {
-    class MissionModel
+    public class MissionModel
     {
         /// <summary>The mission type.</summary>
-        internal enum MissionType
+        public enum MissionType
         {
             Sin,
             Hope
         }
-
-        public MissionModel(int id)
-        {
-            this.Id = id;
-        }
-
         
 
         /// <summary>Gets the id.</summary>
@@ -63,7 +57,11 @@ namespace GuusHamm__S22.Models
         /// <param name="policeNeeded">The police needed.</param>
         public MissionModel(int id, int shipId, DateTime startDate, string description, int x, int y, MissionType missionTypeEnum, int policeNeeded)
         {
-            this.Id = id;
+            if (id != 0)
+            {
+                this.Id = id;
+            }
+
             this.ShipId = shipId;
             this.StartDate = startDate;
             this.Description = description;
@@ -87,7 +85,11 @@ namespace GuusHamm__S22.Models
         /// <param name="endDate">The end date.</param>
         public MissionModel(int id, int shipId, string description, DateTime startDate, int x, int y, MissionType missionTypeEnum, DateTime endDate)
         {
-            this.Id = id;
+            if (id != 0)
+            {
+                this.Id = id;
+            }
+
             this.ShipId = shipId;
             this.Description = description;
             this.StartDate = startDate;

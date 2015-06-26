@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GuusHamm__S22.Models
 {
-    class ShipTypeModel
+    public class ShipTypeModel
     {
         public enum ShipTypeEnum
         {

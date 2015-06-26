@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GuusHamm__S22.Models
 {
-    class CrewMemberModel
+    public class CrewMemberModel
     {
         public int Id { get; private set; }
 

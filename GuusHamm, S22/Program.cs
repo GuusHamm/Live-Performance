@@ -17,9 +17,9 @@
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            DatabaseManager.Initialize();
+            DatabaseManager databaseManager = new DatabaseManager();
             Settings.Initialize();
+            Application.Run(new MainMenuForm());
         }
     }
 }

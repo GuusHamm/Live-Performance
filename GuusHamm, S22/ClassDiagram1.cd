@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GuusHamm__S22.Managers.CrewManager">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAgAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\CrewManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuusHamm__S22.Managers.MissionManager">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAACEAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAgA=</HashCode>
+      <FileName>Managers\MissionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuusHamm__S22.Managers.ShipManager">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIAAAAAAIAAAAAAgAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\ShipManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuusHamm__S22.DatabaseManager">
+    <Position X="2" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAEAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\DatabaseManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuusHamm__S22.MissionForm">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cQAAAAEEASEAIDAQAACA4AAKAAA6IFAAAXAgAABABAA=</HashCode>
+      <FileName>MissionForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuusHamm__S22.MainMenuForm">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACACAQAAAECACAACAEA4AQAAAHAIIAAEAAA=</HashCode>
+      <FileName>MainMenuForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuusHamm__S22.Settings">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAgAAAAAAAAAAEAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
